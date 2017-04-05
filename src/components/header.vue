@@ -6,7 +6,7 @@
             </router-link>
             <div class="nav-item">
                 <ul>
-                    <li v-for="item in navItems" @click="toHome(item.link,$event)" :class={selected:isSelected}>
+                    <li v-for="item in navItems" @click="toLink(item.link,$event)">
                         {{item.text}}
                     </li>
                 </ul>
@@ -37,12 +37,11 @@ export default {
     name: 'header',
     data () {
         return {
-            isSelected: false,
             navItems: navItems
         }
     },
     methods: {
-        toHome (link,$event) {
+        toLink (link,$event) {
             [].forEach.call(document.getElementsByTagName('li'),function(item) {item.className = ''});
             $event.target.className = 'selected';
             router.push(link || '/');
@@ -100,4 +99,16 @@ export default {
     .selected {
         color: yellow;
     }
+	span.nav-in {
+	  -webkit-animation:navin .5s 0s ease both;
+		 -moz-animation:navin .5s 0s ease both;
+		  -ms-animation:navin .5s 0s ease both;
+		   -o-animation:navin .5s 0s ease both;
+			  animation:navin .5s 0s ease both; }
+	span.nav-out {
+	  -webkit-animation:navout .5s 0s ease both;
+		 -moz-animation:navout .5s 0s ease both;
+		  -ms-animation:navout .5s 0s ease both;
+		   -o-animation:navout .5s 0s ease both;
+			  animation:navout .5s 0s ease both; }
 </style>
