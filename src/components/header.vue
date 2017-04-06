@@ -81,15 +81,17 @@ export default {
     }
     #nav {
         position: absolute;
-        top: 50%;
-        left: 20%;
+		width: 100%;
+		height: 100%;
+        top: 0;
+        left: 0;
     }
     .logo {
         width: 54px;
         height: 54px;
-        position: absolute;
-        left: 0;
-        margin: -27px auto 0;
+        position: relative;
+        left: 15%;
+		top: 25%;
         cursor: pointer;
     }
     img {
@@ -102,9 +104,11 @@ export default {
         list-style: none;
         margin: 0;
         padding: 0;
+		width:100%;
+		height:100%;
         position: relative;
-        right: -130%;
-        top: -15px;
+        left: 25%;
+        bottom: 20px;
     }
     li {
         width: auto;

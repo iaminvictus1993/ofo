@@ -39,14 +39,16 @@
 <style>
 	.list {
 		position: absolute;
+		width:100%;
 		left: 0;
-		bottom: -50%;
+		top: 790px;
 		height: 222px;
 		margin: 0;
 		padding: 0;
 	}
     .list img {
         height: 210px;
-        left: 0px;
+        left: 0;
+		width: 100%;
     }
 </style>

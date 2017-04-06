@@ -45,12 +45,13 @@
 		left: 0;
 		top: 0;
 		width: 100%;
-		height: 90%;
-		overflow: hidden;
+		height: 100%;
 		margin: 0;
 		padding: 0;
 	}
     img {
+		width:100%;
+		height:100%;
         left: 0px;
     }
 </style>
