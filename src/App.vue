@@ -2,6 +2,8 @@
   <div id="app">
     <router-view name="header"></router-view>
     <router-view name="swipe"></router-view>
+    <router-view name="swipeList"></router-view>
+    <router-view name="footer"></router-view>
   </div>
 </template>
 

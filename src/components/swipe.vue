@@ -28,7 +28,10 @@
 			return {
 				swiperOption: {
 					pagination: '.swiper-pagination',
-					paginationClickable: true
+					paginationClickable: true,
+                    autoplay: 5000,
+                    height: 911,
+                    width: 1920
 				},
 				imgArr: imgArr
 			}
@@ -44,7 +47,10 @@
 		width: 100%;
 		height: 90%;
 		overflow: hidden;
-		margin-left: -10px;
+		margin: 0;
 		padding: 0;
 	}
+    img {
+        left: 0px;
+    }
 </style>

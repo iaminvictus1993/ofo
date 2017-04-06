@@ -6,7 +6,7 @@
             </router-link>
             <div class="nav-item">
                 <ul>
-                    <li v-for="item in navItems" @click="toLink(item.link,$event)">
+                    <li @mouseover='addClass($event)' @mouseleave='rmClass($event)' v-for="item in navItems" @click="toLink(item.link,$event)">
                         {{item.text}}
                     </li>
                 </ul>
@@ -37,14 +37,21 @@ export default {
     name: 'header',
     data () {
         return {
-            navItems: navItems
+            navItems: navItems,
+            navIn: 'nav-out'
         }
     },
     methods: {
         toLink (link,$event) {
             [].forEach.call(document.getElementsByTagName('li'),function(item) {item.className = ''});
-            $event.target.className = 'selected';
+            $event.target.className += '' + 'selected';
             router.push(link || '/');
+        },
+        addClass ($event) {
+            $event.target.className = 'nav-in';
+        },
+        rmClass ($event) {
+            $event.target.className = 'nav-out';
         }
     }
 }
@@ -63,9 +70,9 @@ export default {
         padding: 0;
     }
     #nav {
-        position: relative;
-        margin: 0 auto;
+        position: absolute;
         top: 50%;
+        left: 20%;
     }
     .logo {
         width: 54px;
@@ -85,6 +92,9 @@ export default {
         list-style: none;
         margin: 0;
         padding: 0;
+        position: relative;
+        right: -130%;
+        top: -15px;
     }
     li {
         width: auto;
@@ -95,17 +105,75 @@ export default {
         margin-left: 44px;
         color: white;
         cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+        opacity: 0.8;
     }
     .selected {
         color: yellow;
     }
-	span.nav-in {
+    @-webkit-keyframes navin{
+        0%{
+            color: #a3daa5
+        }
+        100%{
+            color: #0bfb13
+        }
+    }
+    @-moz-keyframes navin{
+        0%{
+            color: #a3daa5
+        }
+        100%{
+            color: #0bfb13
+        }
+    }
+    @-ms-keyframes navin{
+        0%{
+            color: #a3daa5
+        }
+        100%{
+            color: #0bfb13
+        }
+    }
+    @-o-keyframes navin{
+        0%{
+            color: #a3daa5
+        }
+        100%{
+            color: #0bfb13
+        }
+    }
+    @keyframes navin{
+        0%{
+            color: #a3daa5
+        }
+        100%{
+            color: #0bfb13
+        }
+    }
+    @-webkit-keyframes navout{
+
+    }
+    @-moz-keyframes navout{
+
+    }
+    @-ms-keyframes navout{
+
+    }
+    @-o-keyframes navout{
+
+    }
+    @keyframes navout{
+
+    }
+	.nav-in {
 	  -webkit-animation:navin .5s 0s ease both;
 		 -moz-animation:navin .5s 0s ease both;
 		  -ms-animation:navin .5s 0s ease both;
 		   -o-animation:navin .5s 0s ease both;
 			  animation:navin .5s 0s ease both; }
-	span.nav-out {
+	.nav-out {
 	  -webkit-animation:navout .5s 0s ease both;
 		 -moz-animation:navout .5s 0s ease both;
 		  -ms-animation:navout .5s 0s ease both;
