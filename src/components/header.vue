@@ -44,14 +44,24 @@ export default {
     methods: {
         toLink (link,$event) {
             [].forEach.call(document.getElementsByTagName('li'),function(item) {item.className = ''});
-            $event.target.className += '' + 'selected';
+            $event.target.className = 'selected';
             router.push(link || '/');
         },
         addClass ($event) {
-            $event.target.className = 'nav-in';
+			if(!$event.target.className.match(new RegExp('(\\s|^)' + 'selected' + '(\\s|$)'))) {
+				$event.target.className = ' ';
+			}
+			if(!$event.target.className.match(new RegExp('(\\s|^)' + 'nav-in' + '(\\s|$)'))) {
+				$event.target.className += ' ' + 'nav-in';
+			}
         },
         rmClass ($event) {
-            $event.target.className = 'nav-out';
+			if(!$event.target.className.match(new RegExp('(\\s|^)' + 'selected' + '(\\s|$)'))) {
+				$event.target.className = ' ';
+			}
+			if(!$event.target.className.match(new RegExp('(\\s|^)' + 'nav-out' + '(\\s|$)'))) {
+				$event.target.className += ' ' + 'nav-out';
+			}
         }
     }
 }

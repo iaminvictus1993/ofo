@@ -40,7 +40,7 @@
 	.list {
 		position: absolute;
 		left: 0;
-		bottom: -90px;
+		bottom: -50%;
 		height: 222px;
 		margin: 0;
 		padding: 0;
