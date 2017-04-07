@@ -1,5 +1,5 @@
 ﻿<template>
-	<div class="banner">
+	<div class="swipe">
 		<swiper :options="swiperOption" >
 			<swiper-slide v-for="item in imgArr"><img :src="item.src"/></swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
@@ -40,12 +40,11 @@
 </script>
 
 <style>
-	.banner {
+	.swipe {
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
-		height: 100%;
 		margin: 0;
 		padding: 0;
 	}

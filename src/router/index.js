@@ -4,6 +4,7 @@ import header from '../components/header'
 import swipe from '../components/swipe'
 import swipeList from '../components/swipeList'
 import footer from '../components/footer'
+import shareContent from '../components/shareContent'
 
 Vue.use(Router)
 
@@ -30,6 +31,7 @@ export default new Router({
         path: '/share',
         components: {
             header: header,
+			shareContent: shareContent,
             footer: footer
         }
     },{
