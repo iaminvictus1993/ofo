@@ -39,7 +39,7 @@ export default {
 
 <style>
     footer{
-        position: absolute;
+        //position: absolute;
         top: 1000px;
         margin-top: 10px;
         left: 0;

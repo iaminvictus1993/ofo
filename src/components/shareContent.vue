@@ -36,13 +36,13 @@
 </script>
 <style>
 	.content {
-		position: absolute;
-		width: 100%;
-		height: 780px;
-		top: 0;
-		left: 0;
-		margin: 0;
-		padding: 0;
+		//position: absolute;
+		//width: 100%;
+		//height: 780px;
+		//top: 0;
+		//left: 0;
+		//margin: 0;
+		//padding: 0;
 	}
 	.content .banner {
 		position: relative;
@@ -74,13 +74,13 @@
 		position: relative;
 	}		
 	.pic img{
-		position: absolute;
-		top: 50%;
-		left: 10%;
+		//position: absolute;
+		//top: 50%;
+		left: -15%;
 	}	
 	.ad{
 		position: absolute;
-		top: 50%;
+		top: 20%;
 		left: 50%;
 	}	
 	.ad h3{

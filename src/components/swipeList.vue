@@ -38,13 +38,12 @@
 
 <style>
 	.list {
-		position: absolute;
+		//position: absolute;
 		width:100%;
 		left: 0;
 		top: 790px;
 		height: 222px;
-		margin: 0;
-		padding: 0;
+        margin-bottom: -16px;
 	}
     .list img {
         height: 210px;

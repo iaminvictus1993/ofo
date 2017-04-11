@@ -1,7 +1,7 @@
 ﻿<template>
 	<div class="swipe">
 		<swiper :options="swiperOption" >
-			<swiper-slide v-for="item in imgArr"><img :src="item.src"/></swiper-slide>
+			<swiper-slide v-for="item in imgArr" :key='item.src'><img :src="item.src"/></swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
 	</div>	
@@ -41,7 +41,7 @@
 
 <style>
 	.swipe {
-		position: absolute;
+		//position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
