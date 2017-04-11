@@ -4,6 +4,8 @@
     <router-view name="swipe"></router-view>
     <router-view name="swipeList"></router-view>
     <router-view name="shareContent"></router-view>
+    <router-view name="aboutContent"></router-view>
+    <router-view name="downloadContent"></router-view>
     <router-view name="footer"></router-view>
     <div class='clearFloat'></div>
   </div>

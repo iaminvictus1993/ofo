@@ -5,12 +5,12 @@
 			<img :src='src' />
 		</div>
 		<div class='introduce'>
-			<div class='text'>
+			<div class='text mar'>
 				<p>ofo 共享单车以开放平台和共享精神</p>
 				<p>接纳每一颗热衷共享的种子</p>
 				<p>一同繁衍它的“城市大共享计划”</p>
 			</div>
-			<div class='pic'>
+			<div class='pic mar'>
 				<img :src='src2' />
 				<div class='ad'>
 					<h3>连接单车<br>但不生产单车</h3>
@@ -56,7 +56,7 @@
 		position: absolute;
 		width: 100%;
 		top: 40%;
-		z-index: 10;
+		z-index: 8;
 		color: white;
 		font-size: 66px;
 	}
@@ -81,7 +81,7 @@
 	.ad{
 		position: absolute;
 		top: 20%;
-		left: 50%;
+		left: 55%;
 	}	
 	.ad h3{
 		text-align: left;
@@ -97,5 +97,8 @@
 		padding-bottom: 160px;
 		margin: 0;
 		padding: 0;
+	}
+	.mar{
+		margin: 50px 0 50px;
 	}
 </style>
