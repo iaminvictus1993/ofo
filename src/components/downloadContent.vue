@@ -1,7 +1,7 @@
 ﻿<template>
 	<div class='content'>
 		<div class='banner'>
-			<h3>ofo 共享单车 APP</h3>
+			<h3 id='download'>ofo 共享单车 APP</h3>
 			<p>全新 1.8 版本，邀您共享</p>
 			<img :src='src' />
 		</div>
@@ -24,12 +24,12 @@
 		p: '点击【马上用车】，<br>输入车牌号即可获得解锁密码'
 	},{
 		src: '../../static/img/steps2.jpg',
-		h3: '<em>②</em>获取密码',
-		p: '点击【马上用车】，<br>输入车牌号即可获得解锁密码'
+		h3: '<em>②</em>拨轮锁开锁',
+		p: '拨动密码盘，使密码对准锁身黄色标准线<br>按下圆形按钮，成功'
 	},{
 		src: '../../static/img/steps3.jpg',
-		h3: '<em>③</em>获取密码',
-		p: '点击【马上用车】，<br>输入车牌号即可获得解锁密码'
+		h3: '<em>③</em>如何停放',
+		p: '结束使用后，锁车、复位密码<br>将车停放至道路两旁安全、、区域，方便他人取用'
 	}];
 	export default {
 		name: 'shareContent',
@@ -50,7 +50,7 @@
 		margin: 0;
 		padding: 0;
 	}
-	.content .banner h3{
+	#download{
 		text-align: left;
 		position: absolute;
 		width: 100%;
@@ -63,6 +63,7 @@
 		font-weight: 300;
 		margin: 0;
 		padding: 0;
+        animation: none;
 	}
 	.content .banner h3+p{
 		font-size: 16px;

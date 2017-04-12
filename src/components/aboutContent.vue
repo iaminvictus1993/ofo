@@ -1,7 +1,7 @@
 ﻿<template>
 	<div class='content'>
 		<div class='banner'>
-			<h3>ofo 共享单车首创“单车共享”模式<br>是全球第一个无桩共享单车平台</h3>
+			<h3 id='about'>ofo 共享单车首创“单车共享”模式<br>是全球第一个无桩共享单车平台</h3>
 			<img :src='src' />
 		</div>
 		<div>
@@ -54,15 +54,17 @@
 		margin: 0;
 		padding: 0;
 	}
-	.content .banner h3{
+	#about{
 		text-align: left;
 		position: absolute;
 		width: 100%;
-		top: 20%;
-		left: 10%;
+		top: 16%;
+		left: 20%;
 		z-index: 8;
 		color: white;
 		font-size: 34px;
+        line-height: 130%;
+        animation: fadeIn 2s 0.5s ease both;
 	}
 	.mar h3{
 		font-size: 36px;

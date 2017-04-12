@@ -7,6 +7,7 @@ import footer from '../components/footer'
 import shareContent from '../components/shareContent'
 import aboutContent from '../components/aboutContent'
 import downloadContent from '../components/downloadContent'
+import jobContent from '../components/jobContent'
 
 Vue.use(Router)
 
@@ -41,7 +42,8 @@ export default new Router({
         path: '/job',
         components: {
             header: header,
-            footer: footer
+            footer: footer,
+            jobContent: jobContent
         }
     },{
         path: '/download',
