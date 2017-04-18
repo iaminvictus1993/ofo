@@ -52,5 +52,10 @@ export default new Router({
             footer: footer,
 			downloadContent: downloadContent
         }
-    }]
+    }],
+    scrollBehavior (to, from, savedPosition) {
+        console.log(to,from,savedPosition);
+        return { x: 0, y: 0 };
+    },
+    mode: 'history'
 })

@@ -11,8 +11,9 @@
     <div class='clearFloat'></div>
   </div>
 </template>
-
 <script>
+import test from '../static/test.js'
+test();
 export default {
   name: 'app'
 }
