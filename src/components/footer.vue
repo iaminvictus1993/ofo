@@ -23,15 +23,15 @@ export default {
     name: 'header',
     data () {
         return {
-            src: '../../static/img/footer_logo.png'
+            src: '/static/img/footer_logo.png'
         }
     },
     methods: {
         show () {
-            this.src = '../../static/img/wx-qrcode.jpg';
+            this.src = '/static/img/wx-qrcode.jpg';
         },
         hide () {
-            this.src = '../../static/img/footer_logo.png';
+            this.src = '/static/img/footer_logo.png';
         }
     }
 }
@@ -75,14 +75,14 @@ export default {
         top: 25%;        
     }
     #github {
-        background: url('../../static/img/github.png');
+        background: url('/static/img/github.png');
         display: inline-block;
         width: 24px;
         height: 22px;
         margin-right: 35px;
     }    
     #wechat {
-        background: url('../../static/img/social_icon.png');
+        background: url('/static/img/social_icon.png');
         display: inline-block;
         width: 24px;
         height: 22px;

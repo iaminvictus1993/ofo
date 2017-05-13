@@ -26,8 +26,8 @@
 		name: 'shareContent',
 		data () {
 			return {
-				src: '../../static/img/share1.jpg',
-				src2: '../../static/img/share2.jpg'
+				src: '/static/img/share1.jpg',
+				src2: '/static/img/share2.jpg'
 			}
 		}
 	}

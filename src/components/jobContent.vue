@@ -41,7 +41,7 @@
 		name: 'shareContent',
 		data () {
 			return {
-				src: '../../static/img/job.jpg',
+				src: '/static/img/job.jpg',
 				docs: docs
 			}
 		}

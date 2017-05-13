@@ -10,13 +10,13 @@
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	const imgArr = [{
-		src:'../../static/img/home_bg.jpg'
+		src:'/static/img/home_bg.jpg'
 	},{
-		src:'../../static/img/home_bg2.jpg'
+		src:'/static/img/home_bg2.jpg'
 	},{
-		src:'../../static/img/home_bg3.jpg'
+		src:'/static/img/home_bg3.jpg'
 	},{
-		src:'../../static/img/home_bg4.jpg'
+		src:'/static/img/home_bg4.jpg'
 	}];
 	export default {
 		name: 'swipe',
