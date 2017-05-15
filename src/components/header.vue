@@ -2,7 +2,7 @@
     <header>
         <div id="nav" class="col">
             <router-link class="logo" to='/' tag='div'>
-                <img src="../../static/img/logo.png"/>
+                <img src="/static/img/logo.png"/>
             </router-link>
             <div class="nav-item">
                 <ul>

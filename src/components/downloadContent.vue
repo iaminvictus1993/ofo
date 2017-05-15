@@ -19,15 +19,15 @@
 </template>
 <script>
 	const docs = [{
-		src: '../../static/img/steps1.jpg',
+		src: '/static/img/steps1.jpg',
 		h3: '<em>①</em>获取密码',
 		p: '点击【马上用车】，<br>输入车牌号即可获得解锁密码'
 	},{
-		src: '../../static/img/steps2.jpg',
+		src: '/static/img/steps2.jpg',
 		h3: '<em>②</em>拨轮锁开锁',
 		p: '拨动密码盘，使密码对准锁身黄色标准线<br>按下圆形按钮，成功'
 	},{
-		src: '../../static/img/steps3.jpg',
+		src: '/static/img/steps3.jpg',
 		h3: '<em>③</em>如何停放',
 		p: '结束使用后，锁车、复位密码<br>将车停放至道路两旁安全、、区域，方便他人取用'
 	}];
@@ -35,7 +35,7 @@
 		name: 'shareContent',
 		data () {
 			return {
-				src: '../../static/img/download.jpg',
+				src: '/static/img/download.jpg',
 				docs: docs
 			}
 		}
