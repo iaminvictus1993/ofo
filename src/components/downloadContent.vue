@@ -53,7 +53,6 @@
 	#download{
 		text-align: left;
 		position: absolute;
-		width: 100%;
 		top: 38%;
 		left: 29%;
 		z-index: 8;

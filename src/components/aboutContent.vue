@@ -57,7 +57,6 @@
 	#about{
 		text-align: left;
 		position: absolute;
-		width: 100%;
 		top: 16%;
 		left: 20%;
 		z-index: 8;
