@@ -63,6 +63,7 @@
 		position: relative;
 		img{
 			left: -15%;
+			position: relative;
 		}
 	}	
 	.ad{
