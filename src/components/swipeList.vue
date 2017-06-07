@@ -36,18 +36,17 @@
   }
 </script>
 
-<style>
+<style lang='scss'>
 	.list {
-		//position: absolute;
 		width:100%;
 		left: 0;
 		top: 790px;
 		height: 222px;
         margin-bottom: -16px;
+		img {
+	        height: 210px;
+	        left: 0;
+			width: 100%;
+	    }
 	}
-    .list img {
-        height: 210px;
-        left: 0;
-		width: 100%;
-    }
 </style>

@@ -45,15 +45,7 @@
 		}
 	}
 </script>
-<style>
-	.content .banner {
-		position: relative;
-		width: 100%;
-		top: -13%;
-		left: 0;
-		margin: 0;
-		padding: 0;
-	}
+<style lang='scss'>
 	#about{
 		text-align: left;
 		position: absolute;
@@ -65,19 +57,19 @@
         line-height: 130%;
         animation: fadeIn 2s 0.5s ease both;
 	}
-	.mar h3{
-		font-size: 36px;
-		padding: 42px 0 26px;
-		font-weight: 500;
-		color: #666;
-	}
 	.mar{
 		margin: 50px 0 50px;
-	}
-	.mar p {
-		line-height: 32px;
-		font-size: 14px;
-		color: #8d8d8d;
-		text-align: center;
+		h3 {
+			font-size: 36px;
+			padding: 42px 0 26px;
+			font-weight: 500;
+			color: #666;
+		}
+		p {
+			line-height: 32px;
+			font-size: 14px;
+			color: #8d8d8d;
+			text-align: center;
+		}
 	}
 </style>

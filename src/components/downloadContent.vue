@@ -29,7 +29,7 @@
 	},{
 		src: '/static/img/steps3.jpg',
 		h3: '<em>③</em>如何停放',
-		p: '结束使用后，锁车、复位密码<br>将车停放至道路两旁安全、、区域，方便他人取用'
+		p: '结束使用后，锁车、复位密码<br>将车停放至道路两旁安全、区域，方便他人取用'
 	}];
 	export default {
 		name: 'shareContent',
@@ -41,15 +41,7 @@
 		}
 	}
 </script>
-<style>
-	.content .banner {
-		position: relative;
-		width: 100%;
-		top: -13%;
-		left: 0;
-		margin: 0;
-		padding: 0;
-	}
+<style lang='scss'>
 	#download{
 		text-align: left;
 		position: absolute;
@@ -64,35 +56,45 @@
 		padding: 0;
         animation: none;
 	}
-	.content .banner h3+p{
-		font-size: 16px;
-		color: #e6e5e3;
-		font-weight: 300;
-		position: absolute;
-		top: 44%;
-		left: 29%;	
-		z-index: 8;
-		margin: 0;
-		padding: 0;
-	}
-	.teach h3{
-		padding: 50px 0;
-		font-weight: 500;
-		font-size: 30px;
-		text-align: center;
-		color: #333333;
+	.content {
+		.banner {
+			position: relative;
+			width: 100%;
+			top: -13%;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			h3+p {
+				font-size: 16px;
+				color: #e6e5e3;
+				font-weight: 300;
+				position: absolute;
+				top: 44%;
+				left: 29%;	
+				z-index: 8;
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 	.teach{
 		margin-bottom: 7%;
+		h3 {
+			padding: 50px 0;
+			font-weight: 500;
+			font-size: 30px;
+			text-align: center;
+			color: #333333;
+		}
 	}
 	.mar{
 		margin: 50px 0 50px;
-	}
-	.mar p {
-		line-height: 32px;
-		font-size: 14px;
-		color: #8d8d8d;
-		text-align: center;
+		p {
+			line-height: 32px;
+			font-size: 14px;
+			color: #8d8d8d;
+			text-align: center;
+		}
 	}
 	.step{
 		display: flex;
@@ -102,25 +104,25 @@
 	.container {
 		width: 300px;
 		flex: 0 1 auto;
-	}
-	.container img{
-		width: 300px;
-		height: 300px;
-	}
-	.container h3 {
-		margin-bottom: 10px;
-		text-align: center;
-		font-size: 18px;
-		color: #333333;
-		font-weight: 500;
-		padding: 0;
-	}
-	.container p{
-		line-height: 30px;
-		font-size: 14px;
-		color: #333333;
-		text-align: center;
-		opacity: 0.6;
+		img{
+			width: 300px;
+			height: 300px;
+		}
+		h3 {
+			margin-bottom: 10px;
+			text-align: center;
+			font-size: 18px;
+			color: #333333;
+			font-weight: 500;
+			padding: 0;
+		}
+		p {
+			line-height: 30px;
+			font-size: 14px;
+			color: #333333;
+			text-align: center;
+			opacity: 0.6;
+		}
 	}
 	em{
 		font-style: normal;

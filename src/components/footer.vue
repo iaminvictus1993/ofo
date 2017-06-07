@@ -37,13 +37,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
     footer{
-        //position: absolute;
         top: 1000px;
         margin-top: 10px;
         left: 0;
-        width: 100%;
         height: 310px;
         background: #191919;
     }
@@ -74,18 +72,19 @@ export default {
         position: relative;
         top: 25%;        
     }
-    #github {
-        background: url('/static/img/github.png');
+    @mixin img-style{
         display: inline-block;
         width: 24px;
         height: 22px;
+    }
+    #github {
+        background: url('/static/img/github.png');
+        @include img-style;
         margin-right: 35px;
     }    
     #wechat {
         background: url('/static/img/social_icon.png');
-        display: inline-block;
-        width: 24px;
-        height: 22px;
+        @include img-style;
         background-position: -24px 0;
     }
 </style>

@@ -32,23 +32,13 @@
 		}
 	}
 </script>
-<style>
-	.content {
-		//position: absolute;
-		//width: 100%;
-		//height: 780px;
-		//top: 0;
-		//left: 0;
-		//margin: 0;
-		//padding: 0;
-	}
-	.content .banner {
-		position: relative;
-		width: 100%;
-		top: -13%;
-		left: 0;
-		margin: 0;
-		padding: 0;
+<style lang='scss'>
+	@mixin fade-in {
+        -webkit-animation: fadeIn 2s 0.5s ease both;
+        -moz-animation: fadeIn 2s 0.5s ease both;
+        -ms-animation: fadeIn 2s 0.5s ease both;
+        -o-animation: fadeIn 2s 0.5s ease both;
+        animation: fadeIn 2s 0.5s ease both;		
 	}
 	.content .banner h1{
 		position: absolute;
@@ -57,41 +47,35 @@
 		z-index: 8;
 		color: white;
 		font-size: 66px;
-        -webkit-animation: fadeIn 2s 0.5s ease both;
-        -moz-animation: fadeIn 2s 0.5s ease both;
-        -ms-animation: fadeIn 2s 0.5s ease both;
-        -o-animation: fadeIn 2s 0.5s ease both;
-        animation: fadeIn 2s 0.5s ease both;
+		@include fade-in;
 	}
 	.introduce {
 		position: relative;
 		width: 100%;
 		height: 100%;
 		top: -10%;
-	}
-	.introduce img{
-		width: 400px;
-		height: 400px;
+		img {
+			width: 400px;
+			height: 400px;
+		}
 	}
 	.pic{
 		position: relative;
-	}		
-	.pic img{
-		//position: absolute;
-		//top: 50%;
-		left: -15%;
+		img{
+			left: -15%;
+		}
 	}	
 	.ad{
 		position: absolute;
 		top: 10%;
 		left: 55%;
         width: 336px;
-	}
-	.ad h3{
-		text-align: left;
-		font-size: 36px;
-		color: #585858;
-		font-weight: 500;
+		 h3 {
+			text-align: left;
+			font-size: 36px;
+			color: #585858;
+			font-weight: 500;
+		}
 	}
 	.word{
 		font-size: 14px;
